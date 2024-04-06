@@ -3,19 +3,89 @@
     <head>
         <meta charset="UTF-8">
         <title>Detail</title>
+        <style>
+            .login {
+                color: blue; /* 设置链接颜色为蓝色 */
+                padding-right: 10px;/* 留出间隔空间 */
+                text-decoration: underline; /* 添加下划线效果 */
+            }
+
+            /* 设置链接在悬停状态下的样式 */
+            .login:hover {
+                color: red; /* 设置悬停时的颜色 */
+            }
+            .book-now{
+                color: blue; /* 设置链接颜色为蓝色 */
+                padding-right: 10px;/* 留出间隔空间 */
+                text-decoration: underline; /* 添加下划线效果 */
+            }
+
+            /* 设置链接在悬停状态下的样式 */
+            .book-now:hover {
+                color: red; /* 设置悬停时的颜色 */
+            }
+            .contact-us{
+                color: blue; /* 设置链接颜色为蓝色 */
+                padding-right: 10px;/* 留出间隔空间 */
+                text-decoration: underline; /* 添加下划线效果 */
+            }
+            .contact-us:hover{
+                color: red; /* 设置悬停时的颜色 */
+            }
+            .bold-text {
+            font-weight: bold; /* 设置文字加粗 */
+            }
+            a {
+            text-decoration:underline; /* 添加下划线 */
+            }
+        </style>
     </head>
     <body>
         <div>
             <div class="header">
                 <img src="./assests/images/logo.png" alt="logo images" width=250px height=200px>
-                <br>
-                Header Div
+                <a href="login.html" target="_blank" class="login">Login</a>
             </div>
             <div class="content">
-                Content Div
+                <div class="Radisson-Blu-Hotel" >
+                    <img  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                    <br>
+                    <a href="payment.html" class="book-now">Book Now</a>
+                    <p>
+                        <h2 class="bold-text" >Radisson Blu Hotel</h2>
+                    </p>
+                    <p>RATING</p>
+                    <p>5 Star</p>
+                    <p>AMENITES</p>
+                    <ul>
+                        <li>Room service</li>
+                        <li>Restaurant</li>
+                        <li>Business center</li>
+                        <li>Fitness center</li>
+                        <li>Pool</li>
+                    </ul>
+                    <p class="bold-text">DESCRIPTION</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,illum totam magni voluptatibus libero delectus nesciunt hic vel!Aperiam ess asperriores culpa,natus quam quis eum ex doloremque doloribus architecto!
+                    </p>
+                </div> 
+
             </div>
             <div class="footer">
-                Footer Div
+                <a href="contact.html" target="_blank" class="contact-us">   Contact Us</a>
+                <br>
+                <a href="https://www.facebook.com" target="_blank" class="facebook">
+                    <img src="./assests/images/facebook.png" alt="facebook" width=25px height=25px>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram">
+                    <img src="./assests/images/instagram.png" alt="instagram" width=25px height=25px >
+                </a>
+                <a href="https://twitter.com" target="_blank" class="instagram">
+                    <img src="./assests/images/twitter.png" alt="twitter"  width=25px height=25px>
+                </a>
+                <br>
+                @2020 ROOM SEARCH PUT.LTD
+
             </div>
         </div>
     </body>

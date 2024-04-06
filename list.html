@@ -3,19 +3,128 @@
     <head>
         <meta charset="UTF-8">
         <title>List</title>
+        <style>
+            .login {
+                color: blue; /* 设置链接颜色为蓝色 */
+                padding-right: 10px;/* 留出间隔空间 */
+                text-decoration: underline; /* 添加下划线效果 */
+            }
+
+            /* 设置链接在悬停状态下的样式 */
+            .login:hover {
+                color: red; /* 设置悬停时的颜色 */
+            }
+            li{
+                color: blue; /* 设置链接颜色为蓝色 */
+                text-decoration: underline; /* 添加下划线效果 */
+            }
+            li:hover {
+                color: red; /* 设置悬停时的颜色 */
+            }
+            .Radisson-Blu-Hotel{
+                color: blue; /* 设置链接颜色为蓝色 */
+                text-decoration: underline; /* 添加下划线效果 */
+            }
+            .Radisson-Blu-Hotel:hover{
+                color: red; /* 设置悬停时的颜色 */
+            }
+            a {
+            text-decoration: none; /* 去除下划线 */
+            }
+            .contact{
+                color: blue; /* 设置链接颜色为蓝色 */
+                padding-right: 10px;/* 留出间隔空间 */
+                text-decoration: underline; /* 添加下划线效果 */
+            }
+            .contact:hover {
+                color: red; /* 设置悬停时的颜色 */
+            }
+            .bold-text {
+            font-weight: bold; /* 设置文字加粗 */
+            }
+        </style>
+        <script>
+            function openInNewTab(url) {
+                window.open(url, '_blank');
+            }
+        </script>
     </head>
     <body>
         <div>
             <div class="header">
                 <img src="./assests/images/logo.png" alt="logo images" width=250px height=200px>
-                <br>
-                Header Div
+                <a href="login.html" target="_blank" class="login">Login</a>
             </div>
             <div class="content">
-                Content Div
+                <a href="list.html">
+                    <ul>
+                        <li href="list.html">List View</li>
+                        <li>Map View</li>
+                    </ul>
+                </a>
+                
+                <div class="Radisson-Blu-Hotel" onclick="openInNewTab('detail.html')" style="cursor: pointer;">
+                    <img  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                    <br>
+                    <a class="Radisson-Blu-Hotel"  >
+                         <p class="bold-text" >Radisson Blu Hotel</p>
+                    </a>
+                    <a class="Radisson-Blu-Hotel">
+                        <p>5 Star</p>
+                    </a>
+                    <a class="Radisson-Blu-Hotel"> 
+                        <p>New Delhi</p>
+                    </a>
+                </div> 
+                <div class="The-Lalit-New-Delhi">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi">
+                    <br>
+                    <a class="The-Lalit-New-Delhi">
+                        <p class="bold-text">The Lalit New Delhi</p>
+                    </a>
+                    <a class="The-Lalit-New-Delhi">
+                        <p>4.5 Star</p>
+                    </a>
+                    <a class="The-Lalit-New-Delhi">
+                        <p>New Delhi</p>
+                    </a>
+                </div>
+                <div class="Taj Palace">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
+                    <br>
+                    <a class="Taj Palace">
+                        <p class="bold-text">Taj Palace</p>
+                    </a>
+                    <a class="Taj Palace">
+                        <p>4.0 Star</p>
+                    </a>
+                    <a class="Taj Palace">
+                    <p>New Delhi</p>
+                    </a>
+                </div>
+                <div class="Map Image">
+                    <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map Image">
+                    <br>
+                    <a class="Map Image">
+                        MAP VIEW
+                    </a> 
+                </div><br>
+                
             </div>
             <div class="footer">
-                Footer Div
+                <a href="contact.html" target="_blank" class="contact-us">   Contact Us</a>
+                <br>
+                <a href="https://www.facebook.com" target="_blank" class="facebook">
+                    <img src="./assests/images/facebook.png" alt="facebook" width=25px height=25px>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram">
+                    <img src="./assests/images/instagram.png" alt="instagram" width=25px height=25px >
+                </a>
+                <a href="https://twitter.com" target="_blank" class="instagram">
+                    <img src="./assests/images/twitter.png" alt="twitter"  width=25px height=25px>
+                </a>
+                <br>
+                @2020 ROOM SEARCH PUT.LTD
             </div>
         </div>
     </body>
