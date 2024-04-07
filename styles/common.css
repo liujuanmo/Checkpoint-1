@@ -20,7 +20,15 @@
     font-weight: bold;
 }
 
+body {padding:0; margin: 0;}
 .w60 {width: 60px; height: 60px;}
 .w160 {width: 160px; height: 160px;}
 .w500 {width: 500px; height: 500px;}
 .media-icon {width: 22px; height: 22px;}
+
+.main-bg {background-color: #e0e0e0;}
+.header, .footer {background-color: rosybrown;}
+
+.rounded {border-radius: 25%;}
+
+.margin-left-5p {margin-left: 5%;}

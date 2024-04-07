@@ -31,7 +31,7 @@
         </style>
     </head>
     <body>
-        <div>
+        <div class="main-bg">
             <div class="header">
                 <!-- 图片链接 -->
                 <a href="./index.html">
@@ -41,27 +41,36 @@
             </div>
 
             <div class="content">
-                <div class="Radisson-Blu-Hotel" >
+                    
+                <div class="Radisson-Blu-Hotel" style="margin: 2% auto; width: 50%; height: 20%;background-color:  rgb(132,136,139); ">
                     <img  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                     alt="Radisson Blu Hotel"
-                     class="w500"
-                     >
+                    alt="Radisson Blu Hotel"
+                    class="w500"
+                    >
                     <br>
                     <p>
                         <h2 class="bold-text" >Radisson Blu Hotel</h2>
                     </p>
                     <p>#38 of 1,289 hotel in New Delhi</p>
                     <p>National Highway 8, New Delhi 110017 India</p>
+
+                </div>
+                  
+
+                <div style="margin: 2%;">
                     <p><span class="bold-text" >Name :  </span><span id="name"></span></p>
                     <p><span class="bold-text" >Number of Adults : </span><span id="adultsnum"></span></p>
                     <p><span class="bold-text" >Check-in Date : </span><span id="fromdate"></span></p>
                     <p><span class="bold-text" >Check-out Date : </span><span id="todate"></span></p>
-                    <p><span class="bold-text" >Tariff Breakdown : </span>
-                        <span>Rs.1000 x</span> 
-                        <span id="adultsnum2"></span> <span>Adults x</span> 
-                        <span id="totalday"></span> <span>Nights</span>
-                    </p>
-                    <p><span class="bold-text" >Total Amount : Rs.</span><span id="totalamount"></span></p>
+
+                    <div style="padding: 1% 2%; border: 1px solid black; border-radius: 5px;">
+                        <p><span class="bold-text" >Tariff Breakdown : </span>
+                            <span>Rs.1000 x</span> 
+                            <span id="adultsnum2"></span> <span>Adults x</span> 
+                            <span id="totalday"></span> <span>Nights</span>
+                        </p>
+                        <p><span class="bold-text" >Total Amount : Rs.</span><span id="totalamount"></span></p>
+                    </div>
                     <a href="payment.html" class="pay-now">Pay Now</a>
                 </div> 
             </div>

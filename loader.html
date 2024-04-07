@@ -3,10 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>Loader</title>
+        <style>
+            .loader {
+                    border: 10px solid #f3f3f3; /* Border color of the loader */
+                    border-top: 10px solid #444444; /* Color of the top part of the loader */
+                    border-radius: 50%; /* Makes the loader circular */
+                    width: 70px; /* Adjust the width of the loader */
+                    height: 70px; /* Adjust the height of the loader */
+                    animation: spin 2s linear infinite; /* Animation for spinning */
+
+                    margin: 25% auto;
+                }
+
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+        </style>
     </head>
     <body>
         <div class="loader">
-            LOADER
+           
         </div>
     </body>
 </html>
