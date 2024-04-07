@@ -32,7 +32,10 @@
     <body>
         <div>
             <div class="header">
-                <img src="./assests/images/logo.png" alt="logo images" width=250px height=200px>
+                <!-- 图片链接 -->
+                <a href="./index.html">
+                    <img src="./assests/images/logo.png" alt="logo images" width=250px height=200px>
+                </a>
                 <a href="login.html" target="_blank" class="login">Login</a>
             </div>
 
@@ -45,18 +48,22 @@
                     </p>
                     <p>#38 of 1,289 hotel in New Delhi</p>
                     <p>National Highway 8, New Delhi 110017 India</p>
-                    <p><span class="bold-text" >Name:</span>John Doe</p>
-                    <p><span class="bold-text" >Number of Adults:</span>2</p>
-                    <p><span class="bold-text" >Check-in Date:</span>06/06/2020</p>
-                    <p><span class="bold-text" >Check-in Date:</span>08/06/2020</p>
-                    <p><span class="bold-text" >Tariff Breakdown:</span>Rs.1000 x 2 Adults x 5 Nights</p>
-                    <p><span class="bold-text" >Total Amount:</span>Rs.10000</p>
+                    <p><span class="bold-text" >Name :  </span><span id="name"></span></p>
+                    <p><span class="bold-text" >Number of Adults : </span><span id="adultsnum"></span></p>
+                    <p><span class="bold-text" >Check-in Date : </span><span id="fromdate"></span></p>
+                    <p><span class="bold-text" >Check-out Date : </span><span id="todate"></span></p>
+                    <p><span class="bold-text" >Tariff Breakdown : </span>
+                        <span>Rs.1000 x</span> 
+                        <span id="adultsnum2"></span> <span>Adults x</span> 
+                        <span id="totalday"></span> <span>Nights</span>
+                    </p>
+                    <p><span class="bold-text" >Total Amount : Rs.</span><span id="totalamount"></span></p>
                     <a href="payment.html" class="pay-now">Pay Now</a>
                 </div> 
             </div>
 
             <div class="footer">
-                <a href="contact.html" target="_blank" class="contact-us">   Contact Us</a>
+                <a href="contact.html"  class="contact-us">   Contact Us</a>
                 <br>
                 <a href="https://www.facebook.com" target="_blank" class="facebook">
                     <img src="./assests/images/facebook.png" alt="facebook" width=25px height=25px>
@@ -69,7 +76,24 @@
                 </a>
                 <br>
                 @2020 ROOM SEARCH PUT.LTD
+
             </div>
         </div>
+        <script src="./scripts/common.js"> </script>
+        <script>
+            var fromdate = getUrlParam("fromdate");
+            var todate = getUrlParam("todate");
+            var adultsnum = getUrlParam("adultsnum");
+            var totalday = calculateDateDifference(fromdate, todate);
+
+            document.querySelector("#adultsnum").innerHTML = adultsnum;
+            document.querySelector("#name").innerHTML = getUrlParam("name");
+            document.querySelector("#fromdate").innerHTML = fromdate;
+            document.querySelector("#todate").innerHTML = todate;
+            document.querySelector("#totalday").innerHTML = totalday;
+            
+            document.getElementById("totalamount").innerText = 1000*adultsnum*totalday;
+            document.getElementById("adultsnum2").innerText =getUrlParam("adultsnum");
+        </script>
     </body>
 </html>

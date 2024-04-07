@@ -3,10 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
+        
     </head>
     <body>
         <div class="login">
-            LOGIN
+            <form action="index.html" method="post">
+                <div class="input-group">
+                    <label for="username">Username：</label>
+                    <input type="text" id="username" name="username"  style="width: 200px;"placeholder="Enter Username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password：</label>
+                    <input type="password" id="password" name="password" style="width: 200px;" placeholder="Enter Password" required>
+                </div>
+                <button type="button" onclick="login()">Login</button>
+            </form>
         </div>
     </body>
+    <script src="./scripts/common.js"></script>
 </html>

@@ -1,0 +1,20 @@
+
+
+a {
+text-decoration: none; /* 去除下划线 */
+}
+
+li{
+    color: blue; /* 设置链接颜色为蓝色 */
+    text-decoration: underline; /* 添加下划线效果 */
+}
+li:hover {
+    color: red; /* 设置悬停时的颜色 */
+}
+.Radisson-Blu-Hotel{
+    color: blue; /* 设置链接颜色为蓝色 */
+    text-decoration: underline; /* 添加下划线效果 */
+}
+
+
+

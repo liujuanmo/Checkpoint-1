@@ -3,57 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>List</title>
-        <style>
-            .login {
-                color: blue; /* 设置链接颜色为蓝色 */
-                padding-right: 10px;/* 留出间隔空间 */
-                text-decoration: underline; /* 添加下划线效果 */
-            }
-
-            /* 设置链接在悬停状态下的样式 */
-            .login:hover {
-                color: red; /* 设置悬停时的颜色 */
-            }
-            li{
-                color: blue; /* 设置链接颜色为蓝色 */
-                text-decoration: underline; /* 添加下划线效果 */
-            }
-            li:hover {
-                color: red; /* 设置悬停时的颜色 */
-            }
-            .Radisson-Blu-Hotel{
-                color: blue; /* 设置链接颜色为蓝色 */
-                text-decoration: underline; /* 添加下划线效果 */
-            }
-            .Radisson-Blu-Hotel:hover{
-                color: red; /* 设置悬停时的颜色 */
-            }
-            a {
-            text-decoration: none; /* 去除下划线 */
-            }
-            .contact{
-                color: blue; /* 设置链接颜色为蓝色 */
-                padding-right: 10px;/* 留出间隔空间 */
-                text-decoration: underline; /* 添加下划线效果 */
-            }
-            .contact:hover {
-                color: red; /* 设置悬停时的颜色 */
-            }
-            .bold-text {
-            font-weight: bold; /* 设置文字加粗 */
-            }
-        </style>
-        <script>
-            function openInNewTab(url) {
-                window.open(url, '_blank');
-            }
-        </script>
+        <link rel="stylesheet" href="./styles/common.css">
+        <link rel="stylesheet" href="./styles/list.css">
     </head>
     <body>
         <div>
             <div class="header">
-                <img src="./assests/images/logo.png" alt="logo images" width=250px height=200px>
-                <a href="login.html" target="_blank" class="login">Login</a>
+                <!-- 图片链接 -->
+                <a href="./index.html">
+                    <img src="./assests/images/logo.png" alt="logo images" width=250px height=200px>
+                </a>
+                <a href="login.html"  class="login">Login</a>
             </div>
             <div class="content">
                 <a href="list.html">
@@ -112,7 +72,7 @@
                 
             </div>
             <div class="footer">
-                <a href="contact.html" target="_blank" class="contact-us">   Contact Us</a>
+                <a href="contact.html"  class="contact-us">   Contact Us</a>
                 <br>
                 <a href="https://www.facebook.com" target="_blank" class="facebook">
                     <img src="./assests/images/facebook.png" alt="facebook" width=25px height=25px>
@@ -125,7 +85,13 @@
                 </a>
                 <br>
                 @2020 ROOM SEARCH PUT.LTD
+
             </div>
         </div>
     </body>
+    <script>
+        function openInNewTab(url) {
+            window.location.href=url;
+        }
+    </script>
 </html>

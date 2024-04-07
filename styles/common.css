@@ -1,0 +1,21 @@
+.login {
+    color: blue; /* 设置链接颜色为蓝色 */
+    padding-right: 10px;/* 留出间隔空间 */
+    text-decoration: underline; /* 添加下划线效果 */
+}
+
+/* 设置链接在悬停状态下的样式 */
+.login:hover {
+    color: red; /* 设置悬停时的颜色 */
+}
+.contact-us{
+    color: blue; /* 设置链接颜色为蓝色 */
+    padding-right: 10px;/* 留出间隔空间 */
+    text-decoration: underline; /* 添加下划线效果 */
+}
+.contact-us:hover{
+    color: red; /* 设置悬停时的颜色 */
+}
+.bold-text {
+    font-weight: bold;
+}

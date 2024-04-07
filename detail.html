@@ -3,54 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <title>Detail</title>
-        <style>
-            .login {
-                color: blue; /* 设置链接颜色为蓝色 */
-                padding-right: 10px;/* 留出间隔空间 */
-                text-decoration: underline; /* 添加下划线效果 */
-            }
-
-            /* 设置链接在悬停状态下的样式 */
-            .login:hover {
-                color: red; /* 设置悬停时的颜色 */
-            }
-            .book-now{
-                color: blue; /* 设置链接颜色为蓝色 */
-                padding-right: 10px;/* 留出间隔空间 */
-                text-decoration: underline; /* 添加下划线效果 */
-            }
-
-            /* 设置链接在悬停状态下的样式 */
-            .book-now:hover {
-                color: red; /* 设置悬停时的颜色 */
-            }
-            .contact-us{
-                color: blue; /* 设置链接颜色为蓝色 */
-                padding-right: 10px;/* 留出间隔空间 */
-                text-decoration: underline; /* 添加下划线效果 */
-            }
-            .contact-us:hover{
-                color: red; /* 设置悬停时的颜色 */
-            }
-            .bold-text {
-            font-weight: bold; /* 设置文字加粗 */
-            }
-            a {
-            text-decoration:underline; /* 添加下划线 */
-            }
-        </style>
+        <link rel="stylesheet" href="./styles/common.css">
+        <link rel="stylesheet" href="./styles/detail.css">
     </head>
     <body>
         <div>
             <div class="header">
-                <img src="./assests/images/logo.png" alt="logo images" width=250px height=200px>
+                <!-- 图片链接 -->
+                <a href="./index.html">
+                    <img src="./assests/images/logo.png" alt="logo images" width=250px height=200px>
+                </a>
                 <a href="login.html" target="_blank" class="login">Login</a>
             </div>
             <div class="content">
                 <div class="Radisson-Blu-Hotel" >
                     <img  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
                     <br>
-                    <a href="payment.html" class="book-now">Book Now</a>
+
+                    <form>
+                        <label for="number">Adults:</label>
+                        <input type="number" id="adultsnum" name="adultsnum" min="1" required><br><br>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="date">From Date:</label>
+                        <input type="date" id="fromdate" name="fromdate" required><br><br>
+                        <label for="date">To Date:</label>
+                        <input type="date" id="todate" name="todate" required><br><br>
+                        <label for="number">Total:</label>
+                        <input type="number" id="price" name="price" disabled><br><br>
+                
+                        <!-- <button type="submit" href="payment.html" class="book-now">Book Now</button> -->
+                        <button type="button" onclick="book()">Book Now</button>
+                    </form>
+
+                    <!-- <a href="payment.html" class="book-now">Book Now</a> -->
                     <p>
                         <h2 class="bold-text" >Radisson Blu Hotel</h2>
                     </p>
@@ -72,7 +58,7 @@
 
             </div>
             <div class="footer">
-                <a href="contact.html" target="_blank" class="contact-us">   Contact Us</a>
+                <a href="contact.html"  class="contact-us">   Contact Us</a>
                 <br>
                 <a href="https://www.facebook.com" target="_blank" class="facebook">
                     <img src="./assests/images/facebook.png" alt="facebook" width=25px height=25px>
@@ -89,4 +75,5 @@
             </div>
         </div>
     </body>
+    <script src="./scripts/detail.js"> </script>
 </html>
