@@ -3,64 +3,78 @@
     <head>
         <meta charset="UTF-8">
         <title>Index</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/common.css">
         <link rel="stylesheet" href="./styles/index.css">
     </head>
     <body>
         <div class="main-bg">
             <div class="header">
-                <!-- 图片链接 -->
-                <a href="./index.html">
-                    <img src="./assests/images/logo.png" alt="logo images" class="w60">
-                </a>
-                <a href="login.html"  class="login">Login</a>
+                <div class="container">
+                    <div>
+                        <a href="./index.html">
+                            <img src="./assests/images/logo.png" alt="logo images" class="w60">
+                        </a>
+                    </div>
+                    <div class="login">
+                        <a href="login.html" target="_blank">Login</a>
+                    </div>
+                </div>
             </div>
 
             <div class="content">
-                <div style="height: 380px; max-width: 100%; background: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg') no-repeat;">
-                    <form id="searchForm" action="/search" method="get">
+                <div id="searchdiv">
+                    <form  id="searchform" action="/search" method="get">
                         <!-- <label for="search">搜索：</label> -->
-                        <input type="text" id="search" name="search" style="width: 270px;" placeholder="City">
+                        <input type="text" id="search" name="search" class="search-input" placeholder="City">
                         <!-- <input type="submit" value="搜索"> -->
                     </form>
                 </div>
 
-                <div style="margin:30px 15%;">
+                <div class="product-box" style="margin:30px 15%;">
                     <span>
                         <a href="list.html" class="list">
                             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="new-delhi image" class="w160 rounded">
                         </a>
                     </span>
                     <span>
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa image" class="w160 rounded margin-left-5p">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa image" class="w160 rounded">
                     </span>
                     <span>
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="charminar image" class="w160 rounded margin-left-5p">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="charminar image" class="w160 rounded">
                     </span>
                     <span>
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="kolkata-calcutta image " class="w160 rounded margin-left-5p">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="kolkata-calcutta image " class="w160 rounded">
                    </span>
                 </div>
 
-                <div>
+                <div style="text-align: center; padding: 0px;">
                      <!-- 在下面的 <a> 标签中，将 "view-more.html" 替换为你要跳转的页面的路径或 URL -->
                         <a href="index.html"  class="view-more">View More</a>
                 </div>
             </div>
             <div class="footer">
-                <a href="contact.html"  class="contact-us">   Contact Us</a>
-                <br>
-                <a href="https://www.facebook.com" target="_blank" class="facebook">
-                    <img src="./assests/images/facebook.png" alt="facebook" class="media-icon">
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="instagram">
-                    <img src="./assests/images/instagram.png" alt="instagram" class="media-icon" >
-                </a>
-                <a href="https://twitter.com" target="_blank" class="instagram">
-                    <img src="./assests/images/twitter.png" alt="twitter" class="media-icon">
-                </a>
-                <br>
-                @2020 ROOM SEARCH PUT.LTD
+                <div class="container">
+                    <div class="footer-left">
+                        <a href="contact.html"  class="contact-us">Contact Us</a>
+                    </div>
+                    <div class="bottom">
+                        <p>@2020 ROOM SEARCH PUT.LTD</p>
+                    </div>
+                    <div class="footer-right">
+                        <a href="https://www.facebook.com" target="_blank" class="facebook">
+                            <img src="./assests/images/facebook.png" alt="facebook" class="media-icon">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="instagram">
+                            <img src="./assests/images/instagram.png" alt="instagram" class="media-icon" >
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="instagram">
+                            <img src="./assests/images/twitter.png" alt="twitter" class="media-icon">
+                        </a>
+                    </div>
+                </div>
+                
 
             </div>
         </div>

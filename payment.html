@@ -3,41 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title>Payment</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/common.css">
-        <style>
-            .login {
-                color: blue; /* 设置链接颜色为蓝色 */
-                padding-right: 10px;/* 留出间隔空间 */
-                text-decoration: underline; /* 添加下划线效果 */
-            }
-
-            /* 设置链接在悬停状态下的样式 */
-            .login:hover {
-                color: red; /* 设置悬停时的颜色 */
-            }
-            .bold-text {
-            font-weight: bold; /* 设置文字加粗 */
-            }
-            .pay-now{
-                color: blue; /* 设置链接颜色为蓝色 */
-                padding-right: 10px;/* 留出间隔空间 */
-                text-decoration: underline; /* 添加下划线效果 */
-            }
-
-            /* 设置链接在悬停状态下的样式 */
-            .pay-now:hover {
-                color: red; /* 设置悬停时的颜色 */
-            }
-        </style>
     </head>
     <body>
         <div class="main-bg">
             <div class="header">
-                <!-- 图片链接 -->
-                <a href="./index.html">
-                    <img src="./assests/images/logo.png" alt="logo images" class="w60">
-                </a>
-                <a href="login.html" target="_blank" class="login">Login</a>
+                <div class="container">
+                    <div>
+                        <a href="./index.html">
+                            <img src="./assests/images/logo.png" alt="logo images" class="w60">
+                        </a>
+                    </div>
+                    <div class="login">
+                        <a href="login.html" target="_blank">Login</a>
+                    </div>
+                </div>
             </div>
 
             <div class="content">
@@ -57,7 +39,7 @@
                 </div>
                   
 
-                <div style="margin: 2%;">
+                <div style="margin: 2%; margin-bottom: 100px;">
                     <p><span class="bold-text" >Name :  </span><span id="name"></span></p>
                     <p><span class="bold-text" >Number of Adults : </span><span id="adultsnum"></span></p>
                     <p><span class="bold-text" >Check-in Date : </span><span id="fromdate"></span></p>
@@ -76,19 +58,26 @@
             </div>
 
             <div class="footer">
-                <a href="contact.html"  class="contact-us">   Contact Us</a>
-                <br>
-                <a href="https://www.facebook.com" target="_blank" class="facebook">
-                    <img src="./assests/images/facebook.png" alt="facebook" class="media-icon">
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="instagram">
-                    <img src="./assests/images/instagram.png" alt="instagram" class="media-icon" >
-                </a>
-                <a href="https://twitter.com" target="_blank" class="instagram">
-                    <img src="./assests/images/twitter.png" alt="twitter"  class="media-icon">
-                </a>
-                <br>
-                @2020 ROOM SEARCH PUT.LTD
+                <div class="container">
+                    <div class="footer-left">
+                        <a href="contact.html"  class="contact-us">Contact Us</a>
+                    </div>
+                    <div class="bottom">
+                        <p>@2020 ROOM SEARCH PUT.LTD</p>
+                    </div>
+                    <div class="footer-right">
+                        <a href="https://www.facebook.com" target="_blank" class="facebook">
+                            <img src="./assests/images/facebook.png" alt="facebook" class="media-icon">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="instagram">
+                            <img src="./assests/images/instagram.png" alt="instagram" class="media-icon" >
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="instagram">
+                            <img src="./assests/images/twitter.png" alt="twitter" class="media-icon">
+                        </a>
+                    </div>
+                </div>
+                
 
             </div>
         </div>

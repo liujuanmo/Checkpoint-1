@@ -3,69 +3,79 @@
     <head>
         <meta charset="UTF-8">
         <title>List</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/common.css">
         <link rel="stylesheet" href="./styles/list.css">
     </head>
     <body>
         <div class="main-bg">
             <div class="header">
-                <!-- 图片链接 -->
-                <a href="./index.html">
-                    <img src="./assests/images/logo.png" alt="logo images" class="w60">
-                </a>
-                <a href="login.html"  class="login">Login</a>
+                <div class="container">
+                    <div>
+                        <a href="./index.html">
+                            <img src="./assests/images/logo.png" alt="logo images" class="w60">
+                        </a>
+                    </div>
+                    <div class="login">
+                        <a href="login.html" target="_blank">Login</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="content" style="margin: 0 2%;">
+            <div class="content">
                 
-                <ul>
-                    <li><a href="#list-view">List View</a></li>
-                    <li><a href="#map-view">Map View</a></li>
+                <ul class="margin-top-20" style="display: flex; justify-content: center;">
+                    <li style="list-style: none;"><a href="#list-view">List View</a></li>
+                    <li style="list-style: none; margin-left: 20px;"><a href="#map-view">Map View</a></li>
                 </ul>
             
-                
-                <div id="list-view" class="Radisson-Blu-Hotel" style="background-color: rgb(132,136,139); width: 40%;">
-                    <a href="detail.html">
-                        <img class="w160"  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-                    
-                        <br>
-                        <span class="Radisson-Blu-Hotel"  >
-                            <p class="bold-text" >Radisson Blu Hotel</p>
-                        </span>
-                        <span class="Radisson-Blu-Hotel">
-                            <p>5 Star</p>
-                        </span>
-                        <span class="Radisson-Blu-Hotel"> 
-                            <p>New Delhi</p>
-                        </span>
-                    </a>
-                </div> 
+                <div id="list-view" class="container list-view">
+                    <div class="list-view-item">
+                        <a href="detail.html">
+                            <img class="w160"  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                        
+                            <br>
+                            <span class="Radisson-Blu-Hotel"  >
+                                <p class="bold-text" >Radisson Blu Hotel</p>
+                            </span>
+                            <span class="Radisson-Blu-Hotel">
+                                <p>5 Star</p>
+                            </span>
+                            <span class="Radisson-Blu-Hotel"> 
+                                <p>New Delhi</p>
+                            </span>
+                        </a>
+                    </div> 
 
-                <div class="The-Lalit-New-Delhi" style="background-color: rgb(132,136,139); width: 40%;">
-                    <img class="w160" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi">
-                    <br>
-                    <a class="The-Lalit-New-Delhi">
-                        <p class="bold-text">The Lalit New Delhi</p>
-                    </a>
-                    <a class="The-Lalit-New-Delhi">
-                        <p>4.5 Star</p>
-                    </a>
-                    <a class="The-Lalit-New-Delhi">
+                    <div class="list-view-item">
+                        <img class="w160" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi">
+                        <br>
+                        <a class="The-Lalit-New-Delhi">
+                            <p class="bold-text">The Lalit New Delhi</p>
+                        </a>
+                        <a class="The-Lalit-New-Delhi">
+                            <p>4.5 Star</p>
+                        </a>
+                        <a class="The-Lalit-New-Delhi">
+                            <p>New Delhi</p>
+                        </a>
+                    </div>
+
+                    <div class="list-view-item">
+                        <img class="w160" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
+                        <br>
+                        <a class="Taj Palace">
+                            <p class="bold-text">Taj Palace</p>
+                        </a>
+                        <a class="Taj Palace">
+                            <p>4.0 Star</p>
+                        </a>
+                        <a class="Taj Palace">
                         <p>New Delhi</p>
-                    </a>
-                </div>
-                <div class="Taj Palace" style="background-color: rgb(132,136,139); width: 40%;">
-                    <img class="w160" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
-                    <br>
-                    <a class="Taj Palace">
-                        <p class="bold-text">Taj Palace</p>
-                    </a>
-                    <a class="Taj Palace">
-                        <p>4.0 Star</p>
-                    </a>
-                    <a class="Taj Palace">
-                    <p>New Delhi</p>
-                    </a>
+                        </a>
+                    </div>
+
                 </div>
                 <div id="map-view" class="Map Image">
                     <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map Image">
@@ -78,19 +88,26 @@
             </div>
 
             <div class="footer">
-                <a href="contact.html"  class="contact-us">   Contact Us</a>
-                <br>
-                <a href="https://www.facebook.com" target="_blank" class="facebook">
-                    <img src="./assests/images/facebook.png" alt="facebook" class="media-icon">
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="instagram">
-                    <img src="./assests/images/instagram.png" alt="instagram" class="media-icon">
-                </a>
-                <a href="https://twitter.com" target="_blank" class="instagram">
-                    <img src="./assests/images/twitter.png" alt="twitter" class="media-icon">
-                </a>
-                <br>
-                @2020 ROOM SEARCH PUT.LTD
+                <div class="container">
+                    <div class="footer-left">
+                        <a href="contact.html"  class="contact-us">Contact Us</a>
+                    </div>
+                    <div class="bottom">
+                        <p>@2020 ROOM SEARCH PUT.LTD</p>
+                    </div>
+                    <div class="footer-right">
+                        <a href="https://www.facebook.com" target="_blank" class="facebook">
+                            <img src="./assests/images/facebook.png" alt="facebook" class="media-icon">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="instagram">
+                            <img src="./assests/images/instagram.png" alt="instagram" class="media-icon" >
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="instagram">
+                            <img src="./assests/images/twitter.png" alt="twitter" class="media-icon">
+                        </a>
+                    </div>
+                </div>
+                
 
             </div>
         </div>

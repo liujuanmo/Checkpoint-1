@@ -3,77 +3,96 @@
     <head>
         <meta charset="UTF-8">
         <title>Detail</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/common.css">
         <link rel="stylesheet" href="./styles/detail.css">
     </head>
     <body>
         <div class="main-bg">
             <div class="header">
-                <!-- 图片链接 -->
-                <a href="./index.html">
-                    <img src="./assests/images/logo.png" alt="logo images" class="w60">
-                </a>
-                <a href="login.html" target="_blank" class="login">Login</a>
+                <div class="container">
+                    <div>
+                        <a href="./index.html">
+                            <img src="./assests/images/logo.png" alt="logo images" class="w60">
+                        </a>
+                    </div>
+                    <div class="login">
+                        <a href="login.html" target="_blank">Login</a>
+                    </div>
+                </div>
             </div>
-            <div class="content" style="margin: 2% 4%;">
-                <div class="Radisson-Blu-Hotel" >
-                    <img  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                    class="w500"
-                     alt="Radisson Blu Hotel">
-                    <br>
 
-                    <form>
-                        <label for="number">Adults:</label>
-                        <input type="number" id="adultsnum" name="adultsnum" min="1" required><br><br>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required><br><br>
-                        <label for="date">From Date:</label>
-                        <input type="date" id="fromdate" name="fromdate" required><br><br>
-                        <label for="date">To Date:</label>
-                        <input type="date" id="todate" name="todate" required><br><br>
-                        <label for="number">Total:</label>
-                        <input type="number" id="price" name="price" disabled><br><br>
-                
-                        <!-- <button type="submit" href="payment.html" class="book-now">Book Now</button> -->
-                        <button type="button" onclick="book()">Book Now</button>
-                    </form>
+            <div class="content">
+                <div class="container">
+                    <div class="margin-top-20">
+                        <img  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                        class="w500"
+                        alt="Radisson Blu Hotel">
+                        <br>
 
-                    <!-- <a href="payment.html" class="book-now">Book Now</a> -->
-                    <p>
-                        <h2 class="bold-text" >Radisson Blu Hotel</h2>
-                    </p>
-                    <p>RATING</p>
-                    <p>5 Star</p>
-                    <p>AMENITES</p>
-                    <ul>
-                        <li>Room service</li>
-                        <li>Restaurant</li>
-                        <li>Business center</li>
-                        <li>Fitness center</li>
-                        <li>Pool</li>
-                    </ul>
-                    <p class="bold-text">DESCRIPTION</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,illum totam magni voluptatibus libero delectus nesciunt hic vel!Aperiam ess asperriores culpa,natus quam quis eum ex doloremque doloribus architecto!
-                    </p>
-                </div> 
+                        <form>
+                            <label for="number">Adults:</label>
+                            <input type="number" id="adultsnum" name="adultsnum" min="1" required><br><br>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+                            <label for="date">From Date:</label>
+                            <input type="date" id="fromdate" name="fromdate" required><br><br>
+                            <label for="date">To Date:</label>
+                            <input type="date" id="todate" name="todate" required><br><br>
+                            <label for="number">Total:</label>
+                            <input type="number" id="price" name="price" disabled><br><br>
+                    
+                            <!-- <button type="submit" href="payment.html" class="book-now">Book Now</button> -->
+                            <button type="button" onclick="book()">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div>
+                        <p>
+                            <h2 class="bold-text" >Radisson Blu Hotel</h2>
+                        </p>
+                        <p>RATING</p>
+                        <p>5 Star</p>
+                        <p>AMENITES</p>
+                        <ul>
+                            <li>Room service</li>
+                            <li>Restaurant</li>
+                            <li>Business center</li>
+                            <li>Fitness center</li>
+                            <li>Pool</li>
+                        </ul>
+                        <p class="bold-text">DESCRIPTION</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,illum totam magni voluptatibus libero delectus nesciunt hic vel!Aperiam ess asperriores culpa,natus quam quis eum ex doloremque doloribus architecto!
+                        </p>
+                    </div>
+                </div>
 
             </div>
+
             <div class="footer">
-                <a href="contact.html"  class="contact-us">   Contact Us</a>
-                <br>
-                <a href="https://www.facebook.com" target="_blank" class="facebook">
-                    <img src="./assests/images/facebook.png" alt="facebook" class="media-icon">
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="instagram">
-                    <img src="./assests/images/instagram.png" alt="instagram" class="media-icon">
-                </a>
-                <a href="https://twitter.com" target="_blank" class="instagram">
-                    <img src="./assests/images/twitter.png" alt="twitter"  class="media-icon">
-                </a>
-                <br>
-                @2020 ROOM SEARCH PUT.LTD
-
+                <div class="container">
+                    <div class="footer-left">
+                        <a href="contact.html"  class="contact-us">Contact Us</a>
+                    </div>
+                    <div class="bottom">
+                        <p>@2020 ROOM SEARCH PUT.LTD</p>
+                    </div>
+                    <div class="footer-right">
+                        <a href="https://www.facebook.com" target="_blank" class="facebook">
+                            <img src="./assests/images/facebook.png" alt="facebook" class="media-icon">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="instagram">
+                            <img src="./assests/images/instagram.png" alt="instagram" class="media-icon" >
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="instagram">
+                            <img src="./assests/images/twitter.png" alt="twitter" class="media-icon">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

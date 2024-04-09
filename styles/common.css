@@ -1,34 +1,93 @@
-.login {
-    color: blue; /* 设置链接颜色为蓝色 */
-    padding-right: 10px;/* 留出间隔空间 */
-    text-decoration: underline; /* 添加下划线效果 */
+body {
+    padding:0; margin: 0;font-family: 'Ubuntu', sans-serif;
+    background-color: #e0e0e0; 
+}
+a {
+    color: black;
+    text-decoration: none;
 }
 
-/* 设置链接在悬停状态下的样式 */
-.login:hover {
-    color: red; /* 设置悬停时的颜色 */
-}
-.contact-us{
-    color: blue; /* 设置链接颜色为蓝色 */
-    padding-right: 10px;/* 留出间隔空间 */
-    text-decoration: underline; /* 添加下划线效果 */
-}
-.contact-us:hover{
-    color: red; /* 设置悬停时的颜色 */
-}
-.bold-text {
-    font-weight: bold;
-}
-
-body {padding:0; margin: 0;}
+.bold-text {font-weight: bold;}
 .w60 {width: 60px; height: 60px;}
 .w160 {width: 160px; height: 160px;}
 .w500 {width: 500px; height: 500px;}
 .media-icon {width: 22px; height: 22px;}
 
-.main-bg {background-color: #e0e0e0;}
-.header, .footer {background-color: rosybrown;}
+.header, .footer {
+    width: 100%;
+    background-color: rosybrown;
+     position: fixed;
+     z-index: 999;
+    }
+.header {top: 0; left:0;}
+.footer {bottom: 0; left: 0;}
 
 .rounded {border-radius: 25%;}
 
 .margin-left-5p {margin-left: 5%;}
+.margin-top-20 {margin-top: 20px;}
+.login {display: flex; align-items: center;}
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    text-align: right; /* 文字水平靠右对齐 */
+}
+.header img{
+    display: flex;
+    margin-right: 10px; /* 可以根据需要调整图片与标题之间的间距 */
+}
+
+.content {
+    margin-top: 60px; position: absolute; width: 100%;
+}
+
+#searchdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 380px; 
+    max-width: 100%;
+    background: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg') no-repeat;
+}
+.search-input {
+    width: 270px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-right {
+    padding: 20px;
+
+}
+
+.bottom {font-size: 10px;
+     text-align: center;
+     display: flex;
+     align-items:last baseline
+    }
+
+    .product-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.list-view {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-view-item {
+    margin-top: 40px;
+    background-color: rgb(132,136,139);
+    width: 40%;
+}
